@@ -1,0 +1,893 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --claro: #e2e8f0;
+    --vidro: rgba(255,255,255,0.1);
+    --maisEscuro: #000000;
+}
+
+body {
+    background-color:var(--escuro);
+    color: var(--claro);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+/* Menu toggle (hamburger) */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--claro);
+    border-radius: 2px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.foto-perfil {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.profissao {
+    font-size: 1.5rem;
+    color: var(--claro);
+}
+
+.sobre {
+    padding: 6rem 2rem;
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tecnologias {
+    padding: 6rem 2rem;
+    background: var(--maisEscuro);
+}
+
+.tecnologias-titulo {
+    font-size: 2.5rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tecnologias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.tecnologia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tecnologia-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+    border-color: var(--primaria);
+    background: rgba(79, 70, 229, 0.1);
+}
+
+.tech-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(79, 70, 229, 0.3));
+}
+
+.tech-nome {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--claro);
+}
+
+.projetos {
+  padding: 6rem 2rem;
+}
+
+
+.projetos-caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projetos-card {
+     background: rgba(255, 255, 255, 0.05);
+     border-radius: 16px;
+     backdrop-filter: blur(5px);
+     border: 1px solid var(--vidro);
+     overflow: hidden;
+     transition: all 0.5s ease;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.botao-projeto {
+    display: inline-block;
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    margin-top: auto;
+}
+
+.projetos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.projetos-imagem {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.caixa-textos-projeto {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.paragrafo-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+}
+
+.contato {
+   padding: 6rem 2rem;
+}
+
+.contatos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.formulario-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border: 1px solid var(--vidro);
+  border-radius: 16px;
+}
+
+.campo-form {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: var(--claro);
+  border: 1px solid var(--vidro);
+  outline: none;
+}
+
+.campo-form:focus {
+    border-color: var(--secundaria);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+}
+
+.grupo-form {
+   margin-bottom: 1.5rem;
+}
+
+.botao-form {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+/* REDES SOCIAIS */
+.social-medias {
+    padding: 6rem 2rem;
+}
+
+.social-medias-titulo {
+    font-size: 2.5rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-media-link {
+    transition: all 0.3s ease;
+}
+
+.social-media-link:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.media-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(79, 70, 229, 0.3));
+}
+
+.meu-footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    text-align: center;
+    color: var(--claro);
+    border-top: 1px solid var(--vidro);
+}
+
+.botao-todos-projetos {
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    color: var(--claro);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.botao-todos-projetos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+.botao-projeto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* ========== ANIMAÇÕES ========== */
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets e telas médias (768px) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 1.1rem;
+        z-index: 200;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(15, 23, 42, 0.95);
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu.active {
+        max-height: 300px;
+        padding: 1rem 0;
+    }
+
+    .menu li {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-link {
+        display: block;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 15px;
+    }
+
+    .profissao {
+        font-size: 1.2rem;
+    }
+
+    .foto-perfil {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sobre {
+        padding: 4rem 1rem;
+    }
+
+    .sobre-titulo {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .sobre-caixa {
+        padding: 1.5rem;
+    }
+
+    .sobre-paragrafo {
+        font-size: 1rem;
+    }
+
+    .tecnologias {
+        padding: 4rem 1rem;
+    }
+
+    .tecnologias-titulo {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .tecnologias-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .tecnologia-item {
+        padding: 1rem;
+    }
+
+    .tech-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tech-nome {
+        font-size: 0.85rem;
+    }
+
+    .projetos {
+        padding: 4rem 1rem;
+    }
+
+    .projetos-titulo {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contato {
+        padding: 4rem 1rem;
+    }
+
+    .contatos-titulo {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .formulario-contato {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .social-medias {
+        padding: 4rem 1rem;
+    }
+
+    .social-medias-titulo {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .social-media-container {
+        gap: 1rem;
+    }
+
+    /* Empilha as logos verticalmente em telas menores */
+    .social-media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-logo {
+        width: 50px;
+        height: 50px;
+        
+    }
+}
+
+/* Celulares pequenos (480px) */
+@media (max-width: 480px) {
+    .navegacao {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 10px;
+    }
+
+    .profissao {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+
+    .cabecalho {
+        min-height: 80vh;
+        padding-top: 5rem;
+    }
+
+    .sobre {
+        padding: 3rem 1rem;
+    }
+
+    .sobre-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .sobre-caixa {
+        padding: 1rem;
+    }
+
+    .sobre-paragrafo {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+
+    .tecnologias {
+        padding: 3rem 1rem;
+    }
+
+    .tecnologias-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .tecnologias-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .tecnologia-item {
+        padding: 0.8rem;
+    }
+
+    .tech-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-nome {
+        font-size: 0.75rem;
+    }
+
+    .projetos {
+        padding: 3rem 1rem;
+    }
+
+    .projetos-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .projetos-imagem {
+        height: 150px;
+    }
+
+    .caixa-textos-projeto {
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+
+    .info-projetos {
+        font-size: 1rem;
+    }
+
+    .paragrafo-projetos {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    .botao-projeto {
+        margin: 0 1rem 1rem 1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .contato {
+        padding: 3rem 1rem;
+    }
+
+    .contatos-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .formulario-contato {
+        padding: 1.2rem;
+        max-width: 100%;
+    }
+
+    .campo-form {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .botao-form {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .grupo-form {
+        margin-bottom: 1rem;
+    }
+
+    .social-medias {
+        padding: 3rem 1rem;
+    }
+
+    .social-medias-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .social-media-container {
+        gap: 0.8rem;
+    }
+
+    /* Empilha as logos em celulares menores */
+    .social-media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-logo {
+        width: 40px;
+        height: 40px;
+       
+    }
+
+    .botao-todos-projetos {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .meu-footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Celulares muito pequenos (320px) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sobre-titulo,
+    .tecnologias-titulo,
+    .projetos-titulo,
+    .contatos-titulo,
+    .social-medias-titulo {
+        font-size: 1.3rem;
+    }
+
+    .tecnologias-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* Estilo para o botão/link dos projetos */
+.botao-projeto {
+    display: inline-block;
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.botao-projeto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(79, 70, 229, 0.35);
+}
+
+/* Botão de Todos os Projetos */
+.botao-todos-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    color: var(--claro);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+   
+}
+
+.botao-todos-projetos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4);
+}
+
+.botao-todos-projetos:active {
+    transform: scale(0.98);
+}
+
+.seta {
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+
+.botao-todos-projetos .seta:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+    radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+    var(--maisEscuro);
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.social-medias {
+    padding: 6rem 2rem;
+}
+
+.social-medias-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+
+}
+
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+
+.media-logo {
+   width: 60px;
+   height: 60px;
+   filter: drop-shadow(0 0 5px rgba(79, 70, 229, 0.3));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 0.3s ease;
+   
+}
+
+.media-logo:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+    border-color: var(--primaria);
+    background: rgba(79, 70, 229, 0.1);
+   
+}
+
+.meu-footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
