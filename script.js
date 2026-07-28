@@ -131,7 +131,27 @@ const projetos = [
         descricao: "Este projeto é uma interface inspirada no Spotify, desenvolvida com foco em layout moderno, responsividade e experiência do usuário. A aplicação simula elementos visuais da plataforma original, como navegação lateral, barra de busca e exibição dinâmica de artistas e álbuns.",
         imagem: "./projects/spotify.jpeg",
         link: "https://luancarlos13.github.io/Projeto-Spotify/"
+    },
+
+     { titulo: "Projeto World Cup 2026",
+        descricao: "O Projeto World Cup 2026 é uma aplicação web desenvolvida para apresentar informações sobre a Copa do Mundo de 2026 por meio de uma interface moderna, dinâmica e totalmente responsiva. O projeto reúne dados das seleções participantes, estatísticas, títulos conquistados e outros conteúdos relacionados ao maior campeonato de futebol do mundo, proporcionando uma navegação intuitiva e agradável para os fãs do esporte.",
+        imagem: "projects/world-cup.jpeg",
+        link: "https://luancarlos13.github.io/Projeto-World-Cup-2026/"
+    },
+
+    
+     { titulo: "Jacy Beauty",
+        descricao: "A Jacy Beauty é uma Landing Page moderna e responsiva desenvolvida para apresentar os serviços de uma profissional da área da beleza de forma elegante e profissional. O projeto foi criado com foco na experiência do usuário, destacando os principais serviços, diferenciais e facilitando o contato com clientes em potencial.",
+        imagem: "projects/Jacy-beauty.jpeg",
+        link: "https://luancarlos13.github.io/Jacy-Beauty/"
+    },
+
+     { titulo: "Fisioterapia Pélvica",
+        descricao: "Esta é uma Landing Page moderna desenvolvida para apresentar os serviços da Dra. Lyvia, especialista em Fisioterapia Pélvica. O projeto foi criado com foco em transmitir credibilidade, profissionalismo e acolhimento, oferecendo uma experiência intuitiva para pacientes que buscam informações e desejam agendar uma consulta.",
+        imagem: "projects/fisio-pelvica.jpeg",
+        link: "https://luancarlos13.github.io/Dra.Lyvia/"
     }
+
 
 ];
 
