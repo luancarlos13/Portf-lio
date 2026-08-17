@@ -150,6 +150,30 @@ const projetos = [
         descricao: "Esta é uma Landing Page moderna desenvolvida para apresentar os serviços da Dra. Lyvia, especialista em Fisioterapia Pélvica. O projeto foi criado com foco em transmitir credibilidade, profissionalismo e acolhimento, oferecendo uma experiência intuitiva para pacientes que buscam informações e desejam agendar uma consulta.",
         imagem: "projects/fisio-pelvica.jpeg",
         link: "https://luancarlos13.github.io/Dra.Lyvia/"
+    },
+
+     { titulo: "Eduarda Fisio",
+        descricao: "Landing page profissional desenvolvida para apresentar os serviços e a atuação da fisioterapeuta Maria Eduarda da Fonseca Mendes Silva, proporcionando aos visitantes uma experiência moderna, objetiva e intuitiva para conhecer sua formação, especialidades e entrar em contato para agendamentos.",
+        imagem: "projects/fisio-eduarda.jpeg",
+        link: "https://luancarlos13.github.io/Dra-Eduarda-Fisio/"
+    },
+
+     { titulo: "Jokenpô",
+        descricao: "O Jokenpô é um projeto desenvolvido para simular o clássico jogo de Pedra, Papel e Tesoura de forma interativa e dinâmica. A aplicação permite que o usuário jogue contra o computador, que realiza suas escolhas de maneira aleatória a cada rodada.",
+        imagem: "projects/jokenpo.jpeg",
+        link: "https://luancarlos13.github.io/Desafio-Jokenp-/"
+    },
+
+     { titulo: "Dev-Sorteio",
+        descricao: "O Dev-Sorteio é uma aplicação web desenvolvida para realizar sorteios de números de forma simples, rápida e intuitiva. O projeto permite que o usuário defina um intervalo numérico, informando o valor inicial e o valor final, e então realize o sorteio através de uma interface interativa.",
+        imagem: "projects/devsorteio.jpeg",
+        link: "https://luancarlos13.github.io/Dev-Sorteio/"
+    },
+
+      { titulo: "Dev-Nike",
+        descricao: "Projeto desenvolvido durante os estudos de desenvolvimento Front-End, inspirado em uma página moderna de produto da Nike. A aplicação apresenta o Nike Air Zoom de forma visual e interativa, permitindo ao usuário visualizar diferentes versões do tênis através dos botões de seleção de cores.",
+        imagem: "projects/nike.jpeg",
+        link: "https://luancarlos13.github.io/Nike-DevClub/"
     }
 
 
