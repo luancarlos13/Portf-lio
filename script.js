@@ -174,7 +174,26 @@ const projetos = [
         descricao: "Projeto desenvolvido durante os estudos de desenvolvimento Front-End, inspirado em uma página moderna de produto da Nike. A aplicação apresenta o Nike Air Zoom de forma visual e interativa, permitindo ao usuário visualizar diferentes versões do tênis através dos botões de seleção de cores.",
         imagem: "projects/nike.jpeg",
         link: "https://luancarlos13.github.io/Nike-DevClub/"
+    },
+
+     { titulo: "Salão Fios de Ouro",
+        descricao: "Landing page desenvolvida para o Salão Fios de Ouro, um espaço especializado em beleza, cuidados capilares e terapia capilar. O projeto apresenta os serviços oferecidos pelo salão, seus diferenciais e informações de contato, proporcionando uma experiência moderna, elegante e intuitiva para os visitantes.",
+        imagem: "projects/fios-de-ouro.jpeg",
+        link: "https://luancarlos13.github.io/Fios-De-Ouro/"
+    },
+
+     { titulo: "Projeto Autismo",
+        descricao: "O Projeto Autismo é uma página web informativa desenvolvida com o objetivo de apresentar informações sobre o Transtorno do Espectro Autista (TEA) de maneira acessível, organizada e visualmente agradável. A proposta do projeto é contribuir para a conscientização sobre o autismo, abordando diferentes aspectos relacionados ao espectro e reforçando a importância da empatia, do respeito, da inclusão e da compreensão das particularidades de cada pessoa autista.",
+        imagem: "projects/autismo.jpeg",
+        link: "https://luancarlos13.github.io/Projeto-Autismo/"
+    },
+
+     { titulo: "Lorenna - Estética Facial",
+        descricao: "Lorenna Paula – Estética Facial é uma landing page profissional desenvolvida para apresentar os serviços de estética facial de forma moderna, elegante e intuitiva. O projeto foi pensado para transmitir credibilidade, cuidado e profissionalismo, além de facilitar o contato entre a profissional e suas clientes.",
+        imagem: "projects/lorenna-estetica.jpeg",
+        link: "https://luancarlos13.github.io/Lorenna-Estetica/"
     }
+
 
 
 ];
