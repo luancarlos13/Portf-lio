@@ -179,7 +179,7 @@ const projetos = [
      { titulo: "Salão Fios de Ouro",
         descricao: "Landing page desenvolvida para o Salão Fios de Ouro, um espaço especializado em beleza, cuidados capilares e terapia capilar. O projeto apresenta os serviços oferecidos pelo salão, seus diferenciais e informações de contato, proporcionando uma experiência moderna, elegante e intuitiva para os visitantes.",
         imagem: "projects/fios-de-ouro.jpeg",
-        link: "https://luancarlos13.github.io/Fios-De-Ouro/"
+        link: "https://luancarlos13.github.io/Fios-de-ouro/"
     },
 
      { titulo: "Projeto Autismo",
