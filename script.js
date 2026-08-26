@@ -155,7 +155,7 @@ const projetos = [
      { titulo: "Eduarda Fisio",
         descricao: "Landing page profissional desenvolvida para apresentar os serviços e a atuação da fisioterapeuta Maria Eduarda da Fonseca Mendes Silva, proporcionando aos visitantes uma experiência moderna, objetiva e intuitiva para conhecer sua formação, especialidades e entrar em contato para agendamentos.",
         imagem: "projects/fisio-eduarda.jpeg",
-        link: "https://luancarlos13.github.io/Dra-Eduarda-Fisio/"
+        link: "https://luancarlos13.github.io/Fisio-Eduarda/"
     },
 
      { titulo: "Jokenpô",
