@@ -192,8 +192,13 @@ const projetos = [
         descricao: "Lorenna Paula – Estética Facial é uma landing page profissional desenvolvida para apresentar os serviços de estética facial de forma moderna, elegante e intuitiva. O projeto foi pensado para transmitir credibilidade, cuidado e profissionalismo, além de facilitar o contato entre a profissional e suas clientes.",
         imagem: "projects/lorenna-estetica.jpeg",
         link: "https://luancarlos13.github.io/Lorenna-Estetica/"
-    }
+    },
 
+     { titulo: "Agosto Lilás",
+        descricao: "Uma aplicação web educativa dedicada à conscientização, prevenção e combate à violência doméstica e familiar contra a mulher no Brasil.",
+        imagem: "projects/agosto-lilas.jpeg",
+        link: "https://luancarlos13.github.io/Agosto-Lil-s/"
+    }
 
 
 ];
