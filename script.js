@@ -198,12 +198,25 @@ const projetos = [
         descricao: "Uma aplicação web educativa dedicada à conscientização, prevenção e combate à violência doméstica e familiar contra a mulher no Brasil.",
         imagem: "projects/agosto-lilas.jpeg",
         link: "https://luancarlos13.github.io/Agosto-Lil-s/"
+    },
+
+     { titulo: "AquaTrevis",
+        descricao: "A AQUATREVIS é um projeto de website desenvolvido para representar uma loja especializada em **aquarismo profissional**, oferecendo uma experiência visual moderna, organizada e imersiva para apresentar produtos, espécies de peixes, equipamentos e diferentes modelos de aquários.",
+        imagem: "projects/aquatrevis.jpeg",
+        link: "https://luancarlos13.github.io/Aquarismo/"
+    },
+
+    
+     { titulo: "Gráfica Premium",
+        descricao: "A Gráfica Premium é uma solução para comunicação visual e impressões personalizadas. A landing page foi projetada para destacar: Agilidade na produção e alta qualidade de acabamento, Diversidade de produtos (impressões, banners, cartões, convites, plastificação e xerox), Integração direta com canais de atendimento (WhatsApp e Redes Sociais), Facilidades de pagamento (Pix, Cartões de Crédito e recargas).",
+        imagem: "projects/grafica.jpeg",
+        link: "https://luancarlos13.github.io/Grafica-Premium/"
     }
 
 
 ];
 
-// Quantidade inicial de projetos a exibir
+// Quantidade inicial de projetos a exibirltw1
 const PROJETOS_INICIAIS = 6;
 let projetosExibidos = PROJETOS_INICIAIS;
 
