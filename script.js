@@ -211,7 +211,14 @@ const projetos = [
         descricao: "A Gráfica Premium é uma solução para comunicação visual e impressões personalizadas. A landing page foi projetada para destacar: Agilidade na produção e alta qualidade de acabamento, Diversidade de produtos (impressões, banners, cartões, convites, plastificação e xerox), Integração direta com canais de atendimento (WhatsApp e Redes Sociais), Facilidades de pagamento (Pix, Cartões de Crédito e recargas).",
         imagem: "projects/grafica.jpeg",
         link: "https://luancarlos13.github.io/Grafica-Premium/"
+    },
+
+     { titulo: "Projeto Demon-Slayer",
+        descricao: "Projeto desenvolvido com inspiração no universo de Demon Slayer: Kimetsu no Yaiba, com o objetivo de criar uma página temática dedicada ao anime e apresentar informações sobre sua história, personagens e principais aberturas.",
+        imagem: "projects/demon-slayer.jpeg",
+        link: "https://luancarlos13.github.io/Demon-Slayer/"
     }
+
 
 
 ];
