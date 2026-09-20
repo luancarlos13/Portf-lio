@@ -217,6 +217,12 @@ const projetos = [
         descricao: "Projeto desenvolvido com inspiração no universo de Demon Slayer: Kimetsu no Yaiba, com o objetivo de criar uma página temática dedicada ao anime e apresentar informações sobre sua história, personagens e principais aberturas.",
         imagem: "projects/demon-slayer.jpeg",
         link: "https://luancarlos13.github.io/Demon-Slayer/"
+    },
+
+     { titulo: "Alma dos Pés",
+        descricao: "O Alma dos Pés é uma Landing Page desenvolvida para uma clínica de Podologia Clínica e Preventiva, com uma proposta visual moderna, acolhedora e profissional. O projeto foi pensado para apresentar os serviços da clínica de forma clara, transmitir confiança aos visitantes e facilitar o contato e o agendamento de avaliações.",
+        imagem: "projects/Podologia.jpeg",
+        link: "https://luancarlos13.github.io/Podologia/"
     }
 
 
