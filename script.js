@@ -223,9 +223,19 @@ const projetos = [
         descricao: "O Alma dos Pés é uma Landing Page desenvolvida para uma clínica de Podologia Clínica e Preventiva, com uma proposta visual moderna, acolhedora e profissional. O projeto foi pensado para apresentar os serviços da clínica de forma clara, transmitir confiança aos visitantes e facilitar o contato e o agendamento de avaliações.",
         imagem: "projects/Podologia.jpeg",
         link: "https://luancarlos13.github.io/Podologia/"
-    }
+    },
 
+     { titulo: "Projeto Jujutsu Kaisen",
+        descricao: "Projeto desenvolvido com o objetivo de criar uma página web temática inspirada no universo de Jujutsu Kaisen, apresentando informações sobre a obra, seus personagens e suas principais aberturas.",
+        imagem: "projects/jujutsu.jpeg",
+        link: "https://luancarlos13.github.io/Projeto-Jujutsu-Kaisen/"
+    },
 
+    { titulo: "Setembro Amarelo",
+        descricao: "O Setembro Amarelo é um projeto web desenvolvido com o objetivo de promover a conscientização sobre a saúde mental, a valorização da vida e a prevenção ao suicídio.",
+        imagem: "projects/setembro.jpeg",
+        link: "https://luancarlos13.github.io/Setembro-Amarelo/"
+    },
 
 ];
 
