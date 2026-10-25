@@ -243,8 +243,8 @@ const projetos = [
         link: "https://luancarlos13.github.io/Projeto-Outubro-Rosa/"
     },
 
-    { titulo: "",
-        descricao: "O Projeto Outubro Rosa é um site informativo desenvolvido com o objetivo de conscientizar as pessoas sobre a importância da prevenção, do diagnóstico precoce do câncer de mama e dos cuidados com a saúde da mulher.",
+    { titulo: "Psicologia Page",
+        descricao: "O Psicologia Page é um projeto de desenvolvimento Front-End que consiste em uma landing page criada para apresentar os serviços de uma profissional fictícia da área de Psicologia Clínica, chamada Mariana Silva. O objetivo é desenvolver uma presença digital profissional, acolhedora e humanizada, transmitindo confiança aos visitantes e facilitando o acesso às informações sobre os atendimentos psicológicos.",
         imagem: "projects/psico.jpeg",
         link: "https://luancarlos13.github.io/Psicologia-Page/"
     },
