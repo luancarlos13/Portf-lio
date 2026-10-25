@@ -237,6 +237,18 @@ const projetos = [
         link: "https://luancarlos13.github.io/Setembro-Amarelo/"
     },
 
+     { titulo: "Outubro Rosa",
+        descricao: "O Projeto Outubro Rosa é um site informativo desenvolvido com o objetivo de conscientizar as pessoas sobre a importância da prevenção, do diagnóstico precoce do câncer de mama e dos cuidados com a saúde da mulher.",
+        imagem: "projects/outubro-rosa.jpeg",
+        link: "https://luancarlos13.github.io/Projeto-Outubro-Rosa/"
+    },
+
+    { titulo: "",
+        descricao: "O Projeto Outubro Rosa é um site informativo desenvolvido com o objetivo de conscientizar as pessoas sobre a importância da prevenção, do diagnóstico precoce do câncer de mama e dos cuidados com a saúde da mulher.",
+        imagem: "projects/psico.jpeg",
+        link: "https://luancarlos13.github.io/Psicologia-Page/"
+    },
+
 ];
 
 // Quantidade inicial de projetos a exibirltw1
