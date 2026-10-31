@@ -249,6 +249,12 @@ const projetos = [
         link: "https://luancarlos13.github.io/Psicologia-Page/"
     },
 
+     { titulo: "🎃 Projeto Halloween – Noite das Bruxas 👻",
+        descricao: "O Projeto Halloween – Noite das Bruxas é uma página web temática desenvolvida para celebrar uma das datas mais populares e misteriosas do ano: o Halloween, comemorado em 31 de outubro.",
+        imagem: "projects/halloween.jpeg",
+        link: "https://luancarlos13.github.io/Projeto-Halloween/"
+    },
+
 ];
 
 // Quantidade inicial de projetos a exibirltw1
