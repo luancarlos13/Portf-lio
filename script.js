@@ -255,6 +255,12 @@ const projetos = [
         link: "https://luancarlos13.github.io/Projeto-Halloween/"
     },
 
+     { titulo: "🎮 GTA VI - DEV CITY 💜",
+        descricao: "O Projeto GTA VI é uma página web interativa inspirada no universo de Grand Theft Auto VI, desenvolvida com o objetivo de explorar conceitos de desenvolvimento Front-End, criação de interfaces visuais e interatividade com JavaScript. A proposta do projeto é apresentar uma experiência inspirada na identidade visual do jogo, permitindo que o usuário escolha seu personagem favorito por meio de avatares interativos.",
+        imagem: "projects/GTA VI.jpeg",
+        link: "https://luancarlos13.github.io/Projeto-GTA-VI/"
+    }
+
 ];
 
 // Quantidade inicial de projetos a exibirltw1
